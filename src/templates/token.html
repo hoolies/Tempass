@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+    <style>
+        body {
+            background-color: pink;
+        }
+
+        h1 {
+            color: white;
+            text-align: center;
+            font-size: 50px;
+        }
+
+        p {
+            font-family: verdana;
+            color: white;
+            font-size: 30px;
+            text-align: left;
+        }
+
+        .Paragraph{
+            text-align: center;
+        }
+
+        .Token {
+            text-align: center;
+            font-size: 50px;
+        }
+        .Link {
+            text-align: center;
+            font-size: 30px;
+        }
+        a {
+            color:skyblue
+        }
+    </style>
+    <head>
+        <title>
+            Password Generator
+        </title>
+    </head>
+<body>
+    <h1>
+        <br>
+        Welcome to Password Generator
+        <br>
+        <br>
+        <br>
+    </h1>
+    <p class="Paragraph">
+        Your Token is:
+    </p>
+    <p  class="Token">
+        {{ uri  }}
+    </p>
+    <p class="Link">
+        <br>
+        Usage:<br>
+        <a href="/password/{{ uri }}">API:port/password/{{ uri }}</a>   
+    </p>
+</body>
+</html>

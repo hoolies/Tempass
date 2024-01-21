@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+    <style>
+        body {
+            background-color: pink;
+        }
+
+        h1 {
+            color: white;
+            text-align: center;
+            font-size: 50px;
+        }
+
+        p {
+            font-family: verdana;
+            color: white;
+            font-size: 20px;
+            text-align: left;
+        }
+
+        .Paragraph{
+            text-align: center;
+            font-size: 20px;
+        }
+
+        .Password{
+            text-align: center;
+            font-size: 30px;
+        }
+
+        .Token {
+            text-align: center;
+            font-size: 30px;
+        }
+        .Link {
+            text-align: center;
+            font-size: 30px;
+        }
+        a {
+            color:skyblue
+        }
+    </style>
+    <head><title>Password Generator</title></head>
+    <body>
+        <h1>Welcome to Password Generator</h1>
+        <p class="Paragraph">Your Token is:</p>
+        <p class="Token">{{ uri  }}</p>
+        <p class="Paragraph">Your Password is:</p>
+        <p  class="Password">{{ password }}</p>
+        <p class="Paragraph">Link:</p>
+        <p class="Link">
+            <a href="/password/{{ uri }}">127.0.0.1:5000/password/{{ uri }}</a>   
+        </p>
+    </body>
+</html>                                                       

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+    <style>
+        body {
+            background-color: pink;
+        }
+        h1 {
+            color: white;
+            font-size: 40px;
+            text-align: center;
+        }
+        p {
+            font-family: verdana;
+            color: white;
+            font-size: 25px;
+            text-align: left;
+        }
+        h2 {
+            color: white;
+            font-size: 40px;
+            text-align: left;
+            padding-left: 12%;
+            
+        }
+
+        .Paragraph {
+            text-align: center;
+        }
+        
+        .List {
+            color:white;
+            font-size: 25px;
+            text-align: left;
+            padding-left: 14%;
+
+
+        }
+    </style>
+    <head>
+        <title>Password Generator</title>
+    </head>
+<body>
+    <h1>
+        <br>
+        Welcome to Password Generator
+        <br>
+    </h1>
+    <p class="Paragraph">
+        This API will provide you with a secure password and a link to the password!!
+    </p>
+    <p  class="Paragraph">
+        Once you access the link you should be able to see the password then it will be removed from the system.
+    </p>
+    <h2>
+        <br>
+        Examples:
+    </h2>
+    <p>
+        <div class="List">
+            <ul>
+                <li>curl -L API:5000/generate</li>
+                <li>curl -L API:5000/password/token</li>
+            </ul>
+        </div>
+    </p>        
+</body>
+</html>
