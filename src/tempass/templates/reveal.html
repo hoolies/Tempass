@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Tempass</title>
+    <style>
+        body {
+            background-color: pink;
+        }
+        h1, p {
+            color: white;
+            font-family: verdana;
+            text-align: center;
+        }
+        form {
+            text-align: center;
+        }
+        button {
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Tempass</h1>
+    <p>Show this password once. It will be deleted and cannot be opened again.</p>
+    <form method="post" action="/password/{{ token }}">
+        <button type="submit">Show password</button>
+    </form>
+</body>
+</html>

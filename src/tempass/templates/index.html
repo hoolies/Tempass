@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Tempass</title>
+    <style>
+        body {
+            background-color: pink;
+        }
+        h1, h2 {
+            color: white;
+            text-align: center;
+        }
+        p, pre {
+            font-family: verdana;
+            color: white;
+            font-size: 18px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Tempass</h1>
+    <p>Create a temporary password for another system to set, and a link that shows it once.</p>
+    <h2>Create</h2>
+    <pre>curl -X POST -H "X-API-Key: $TEMPASS_API_KEY" http://127.0.0.1:8000/generate</pre>
+    <h2>Reveal</h2>
+    <p>Open the reveal_path from that response and confirm. The password is deleted when it is shown. Links expire after two days.</p>
+</body>
+</html>
